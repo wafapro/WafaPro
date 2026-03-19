@@ -1,69 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>WafaPro</title>
-
-<style>
-body {
-    margin: 0;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-
-    background: url("main.jpg") no-repeat center center;
-    background-size: cover;
-}
-
-/* كل المحتوى تحت يسار */
-.bottom-left {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    background: rgba(0,0,0,0.5);
-    padding: 15px 20px;
-    border-radius: 10px;
-    font-size: 15px;
-}
-
-.bottom-left p {
-    margin: 5px 0;
-}
-
-/* أزرار السوشيال */
-.social a {
-    display: inline-block;
-    margin: 8px 8px 0 0;
-    padding: 8px 14px;
-    background: #1877f2;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 13px;
-}
-
-.social a.youtube {
-    background: #ff0000;
-}
-
-.social a:hover {
-    opacity: 0.85;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WafaPro - الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="bottom-left">
-    <p>Site Coming Soon</p>
-    <p>Email: wafaproapp@gmail.com</p>
-    <p>Phone: +963949990241</p>
+    <header class="navbar">
+        <div class="container nav-wrap">
+            <div class="logo">Wafa<span>Pro</span></div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">الرئيسية</a>
+                <a href="download.html">التحميل</a>
+                <a href="about.html">حول البرنامج</a>
+                <a href="contact.html">التواصل</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="social">
-        <a href="https://www.facebook.com/WafaProApp" target="_blank">Facebook</a>
-        <a href="https://www.youtube.com/@wafaproapp" target="_blank" class="youtube">YouTube</a>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="badge">نظام احترافي للإدارة والمحاسبة</div>
+                    <h1>
+                        إدارة ذكية
+                        <span class="accent">لمراكز الصيانة</span>
+                    </h1>
+                    <p>
+                        وفا برو برنامج مكتبي احترافي يساعدك على تنظيم العمل، إدارة الزبائن،
+                        متابعة الأجهزة، وتبسيط العمليات المحاسبية بشكل عملي وسريع.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="download.html" class="btn btn-primary">تحميل البرنامج</a>
+                        <a href="about.html" class="btn btn-secondary">اعرف أكثر</a>
+                    </div>
+                    <div class="notice">
+                        الموقع قيد التطوير حالياً، وسيتم إضافة باقي الأقسام والتحديثات قريبًا.
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <img src="images/hero.jpg" alt="واجهة برنامج وفا برو">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">المميزات الرئيسية</h2>
+                <p class="section-subtitle">
+                    نظام عملي ومنظم مصمم لتسهيل سير العمل اليومي داخل مراكز الصيانة.
+                </p>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>إدارة الأجهزة</h3>
+                        <p>متابعة حالات الصيانة، بيانات الأجهزة، وحركة كل جهاز داخل المركز بشكل واضح.</p>
+                    </div>
+                    <div class="card">
+                        <h3>المحاسبة والتقارير</h3>
+                        <p>إدارة الفواتير، الدفعات، الأرصدة، واستعراض تقارير تساعدك في متابعة العمل.</p>
+                    </div>
+                    <div class="card">
+                        <h3>واجهة عملية وسريعة</h3>
+                        <p>تصميم مريح للاستخدام اليومي يساعدك على إنجاز المهام بسرعة وتنظيم.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+    <div class="container">
+        <h2 class="section-title">صور من البرنامج</h2>
+        <p class="section-subtitle">
+            لقطات توضيحية من واجهات النظام. اضغط على أي صورة لفتحها بالحجم الكامل.
+        </p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="images/screenshot1.jpg" target="_blank">
+                    <img src="images/screenshot1.jpg" alt="صورة من البرنامج 1">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/screenshot2.jpg" target="_blank">
+                    <img src="images/screenshot2.jpg" alt="صورة من البرنامج 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/screenshot3.jpg" target="_blank">
+                    <img src="images/screenshot3.jpg" alt="صورة من البرنامج 3">
+                </a>
+            </div>
+        </div>
     </div>
-</div>
+    </section>
+  
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            © 2026 WafaPro. جميع الحقوق محفوظة.
+        </div>
+    </footer>
 
 </body>
 </html>
