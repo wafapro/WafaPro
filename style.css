@@ -436,3 +436,21 @@ img {
         object-fit: contain;
     }
 }
+.floating-download {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, var(--blue), var(--orange));
+    color: white;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: var(--shadow);
+    z-index: 999;
+    transition: 0.2s;
+}
+
+.floating-download:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
