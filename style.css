@@ -280,3 +280,35 @@ img {
         height: auto;
     }
 }
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.stat-box {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: var(--shadow);
+}
+
+.stat-box strong {
+    display: block;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.stat-box span {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+}
