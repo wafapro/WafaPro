@@ -1,133 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وفا برو - الرئيسية</title>
-    <link rel="canonical" href="https://wafapro.net/">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#075fc5">
+  <meta name="description" content="WafaPro للمحاسبة، برنامج عربي للمشاريع الصغيرة والمتوسطة لإدارة المبيعات والمشتريات والمخزون والعملاء والموردين والتقارير مع دعم تعدد العملات.">
+  <title>WafaPro للمحاسبة | إدارة أسهل... لنجاح أكبر</title>
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="bottom-v8.css">
+  <link rel="stylesheet" href="fix03.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
+<body class="page-home">
+<svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="m21 3-7.5 18-3.3-7.2L3 10.5 21 3Z"/><path d="m10.2 13.8 6-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7.3 2.7 10 6.8l-2.2 2.5c1.5 3 3.3 4.8 6.4 6.4l2.5-2.2 4.1 2.7a2 2 0 0 1 .6 2.8c-1.1 1.8-3 2.7-5 2.2A21.6 21.6 0 0 1 2.9 8c-.5-2 .4-3.9 2.2-5a2 2 0 0 1 2.2-.3Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M2 4h2l3 12h11l3-9H5M8 20h.02M18 20h.02"/></symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24"><path d="m2 8 10-5 10 5M4 10h16M5 10v8m5-8v8m4-8v8m5-8v8M2 20h20"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><path d="M4 20V13m5 7V9m5 11V5m5 15V2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M17 5a3 3 0 0 1 0 6m-1 4a5 5 0 0 1 5 5v1"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5Zm-9 5v10l9 5 9-5V7M12 12v10"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><path d="M10 2h4l.7 2.3 2.1.9 2.1-1.1 2.8 2.8-1.1 2.1.9 2.1 2.3.7v4l-2.3.7-.9 2.1 1.1 2.1-2.8 2.8-2.1-1.1-2.1.9L14 24h-4l-.7-2.3-2.1-.9-2.1 1.1-2.8-2.8 1.1-2.1-.9-2.1L0 14v-4l2.3-.7.9-2.1-1.1-2.1L4.9 2.3 7 3.4l2.1-.9L10 2Z" transform="translate(1.2 -1.2) scale(.9)"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-currency" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 8h-4a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4H9m3-11v14"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 10h16l-2-6H6l-2 6Zm0 1v10h16V11M9 21v-8h6v8M4 10c1 3 3.5 3 5 0 1 3 5 3 6 0 1.5 3 4 3 5 0"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M21 7a6 6 0 0 1-8 5.7L5.5 20 3 17.5l7.3-7.5A6 6 0 0 1 17 3l-4 4 4 4 4-4Z"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M3 19h18M5 17a7 7 0 0 1 14 0H5ZM12 9V7m-2 0h4M2 21h20"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2m3 0h2m-7 4h2m3 0h2m-7 4h2m3 0h2M11 21v-3h3v3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 6-4 9-9 10C7 21 3 18 3 12V6l9-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 13V11a8 8 0 0 1 16 0v2M4 13h3v6H5c-2 0-3-2-3-4 0-1 .8-2 2-2Zm16 0h-3v6h2c2 0 3-2 3-4 0-1-.8-2-2-2ZM19 19a6 6 0 0 1-6 3h-2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+</svg>
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="WafaPro - الرئيسية">
+      <img class="brand-symbol" src="assets/wafapro-mark.png" alt="" width="64" height="50">
+      <span class="brand-name" dir="ltr"><span>Wafa</span><strong>pro</strong></span>
+    </a>
+    <nav class="navigation" id="main-nav" aria-label="القائمة الرئيسية">
+      <a class="active" href="index.html">الرئيسية</a>
+      <a href="features.html">المزايا</a>
+      <a href="editions.html">الحلول</a>
+      
+      <a href="faq.html">الأسئلة الشائعة</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div class="header-buttons">
+      <a class="btn btn-outline" href="contact.html"><svg class="ico"><use href="#i-phone"></use></svg>تواصل معنا</a>
+      <a class="btn btn-orange" href="contact.html?intent=request"><svg class="ico"><use href="#i-plane"></use></svg>اطلب البرنامج</a>
+    </div>
+    <button class="mobile-menu" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="فتح القائمة"><svg class="ico"><use href="#i-menu"></use></svg></button>
+  </div>
+</header>
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-wave hero-wave-top" aria-hidden="true"></div><div class="hero-wave hero-wave-bottom" aria-hidden="true"></div>
+    <div class="hero-background-chart" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="pill-orange">برنامج محاسبة متكامل وسهل الاستخدام</span>
+        <h1 id="hero-title"><b class="brand-text" dir="ltr"><span>Wafa</span><strong>Pro</strong></b> <span>للمحاسبة</span></h1>
+        <h2>إدارة أسهل ... لنجاح أكبر</h2>
+        <p>حل محاسبي متكامل يساعدك على إدارة مبيعاتك ومشترياتك ومخزونك وعملائك وتقاريرك بكل سهولة واحترافية.</p>
+        <div class="hero-buttons"><a class="btn btn-orange btn-large" href="contact.html?intent=request"><svg class="ico"><use href="#i-plane"></use></svg>اطلب البرنامج</a><a class="btn btn-outline btn-large" href="contact.html"><svg class="ico"><use href="#i-phone"></use></svg>تواصل معنا</a></div>
+        <div class="hero-benefits"><span><em>✓</em>سهل الاستخدام</span><span><svg class="ico"><use href="#i-bars"></use></svg>تقارير دقيقة</span><span><em>✓</em>يدعم نمو أعمالك</span><span><svg class="ico"><use href="#i-shield"></use></svg>آمن وموثوق</span></div>
+      </div>
+      <div class="hero-scenes hero-scenes-reference" aria-label="عرض واجهات البرنامج الرئيسية والمبيعات والأرباح والخسائر">
+        <img class="hero-approved-art" src="assets/hero-art-approved.png" width="1018" height="388" alt="عرض لواجهة WafaPro الرئيسية على لابتوب وإلى جانبها فاتورة مبيعات وتقرير الأرباح والخسائر" fetchpriority="high">
+        <button type="button" class="hero-image-hit hit-dashboard" data-preview="dashboard" aria-label="تكبير الواجهة الرئيسية"></button>
+        <button type="button" class="hero-image-hit hit-sales" data-preview="sales" aria-label="تكبير واجهة المبيعات"></button>
+        <button type="button" class="hero-image-hit hit-report" data-preview="profit" aria-label="تكبير تقرير الأرباح والخسائر"></button>
+      </div>
+    </div>
+  </section>
+  <section class="features-section" id="features">
+    <div class="section-heading"><h2>مزايا متكاملة لإدارة أعمالك</h2><p>مجموعة من الأدوات القوية التي تساعدك على إدارة نشاطك التجاري بكفاءة ومرونة</p></div>
+    <div class="features-grid">
+      <a href="features.html#sales" class="feature-card feature-sales"><span class="feature-symbol icon-from-art"><img alt="" src="assets/icon-sales.png" width="72" height="54"></span><h3>المبيعات والمشتريات</h3><p>إصدار الفواتير وإدارة المبيعات والمشتريات بكل سهولة</p></a>
+      <a href="features.html#cash" class="feature-card feature-bank"><span class="feature-symbol icon-from-art"><img alt="" src="assets/icon-cash.png" width="72" height="54"></span><h3>الصندوق والبنوك</h3><p>إدارة حركة النقدية والصناديق ومتابعة أرصدة الحسابات</p></a>
+      <a href="features.html#reports" class="feature-card feature-report"><span class="feature-symbol icon-from-art"><img alt="" src="assets/icon-reports.png" width="72" height="54"></span><h3>التقارير</h3><p>تقارير شاملة ودقيقة تساعدك في اتخاذ القرار</p></a>
+      <a href="features.html#parties" class="feature-card feature-customers"><span class="feature-symbol icon-from-art"><img alt="" src="assets/icon-parties.png" width="72" height="54"></span><h3>العملاء والموردون</h3><p>إدارة بيانات العملاء والموردين ومتابعة الحسابات بسهولة</p></a>
+      <a href="features.html#inventory" class="feature-card feature-stock"><span class="feature-symbol icon-from-art"><img alt="" src="assets/icon-inventory.png" width="72" height="54"></span><h3>إدارة المواد</h3><p>إدارة المخزون والمواد مع متابعة دقيقة للحركات</p></a>
+      <a href="features.html#usability" class="feature-card feature-ease"><span class="feature-symbol icon-from-art"><img alt="" src="assets/icon-ease.png" width="72" height="54"></span><h3>سهولة الاستخدام</h3><p>واجهة بسيطة ومريحة مصممة لتناسب جميع المستخدمين</p></a>
+      <a href="features.html#currencies" class="feature-card feature-currencies" aria-label="تفاصيل دعم تعدد العملات">
+        <span class="feature-symbol currency-symbol" aria-hidden="true">
+          <svg class="currency-art" viewBox="0 0 106 72" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <defs>
+              <linearGradient id="curr-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#48adff"/><stop offset=".47" stop-color="#0071e7"/><stop offset="1" stop-color="#004dba"/></linearGradient>
+              <linearGradient id="curr-orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffcb5c"/><stop offset=".53" stop-color="#ff9804"/><stop offset="1" stop-color="#e66d00"/></linearGradient>
+              <linearGradient id="curr-green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#60dbc4"/><stop offset=".5" stop-color="#0daf8b"/><stop offset="1" stop-color="#047b75"/></linearGradient>
+              <filter id="curr-shadow" x="-45%" y="-45%" width="190%" height="190%"><feDropShadow dx="0" dy="3" stdDeviation="2.1" flood-color="#075198" flood-opacity=".22"/></filter>
+            </defs>
+            <g filter="url(#curr-shadow)">
+              <circle cx="23" cy="42" r="19" fill="url(#curr-green)" stroke="#fff" stroke-width="2.5"/>
+              <circle cx="83" cy="42" r="19" fill="url(#curr-orange)" stroke="#fff" stroke-width="2.5"/>
+              <circle cx="53" cy="31" r="24" fill="url(#curr-blue)" stroke="#fff" stroke-width="3.2"/>
+            </g>
+            <path d="M10 40c1-10 7-14 13-14M70 41c1-10 7-14 13-14M34 26c2-11 11-16 19-16" fill="none" stroke="white" stroke-opacity=".55" stroke-linecap="round" stroke-width="2.2"/>
+            <text x="23" y="49" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#fff" font-weight="bold">€</text>
+            <text x="83" y="49" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#fff" font-weight="bold">£</text>
+            <text x="53" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" fill="#fff" font-weight="bold">$</text>
+          </svg>
+        </span>
+        <h3>دعم تعدد العملات</h3>
+        <p>التعامل بالعملات المحلية والأجنبية وتسجيل أسعار الصرف ومتابعة العمليات بدقة</p>
+      </a>
 
-    <header class="navbar">
-        <div class="container nav-wrap">
-            <div class="logo">Wafa<span>Pro</span></div>
-            <nav class="nav-links">
-                <a href="index.html" class="active">الرئيسية</a>
-                <a href="download.html">التحميل</a>
-                <a href="about.html">حول البرنامج</a>
-                <a href="contact.html">التواصل</a>
-            </nav>
+    </div>
+  </section>
+  <section class="solutions-showcase" id="editions" aria-labelledby="solutions-title">
+    <div class="bottom-wrap">
+      <div class="solutions-intro">
+        <span class="solutions-kicker">حلول WafaPro</span>
+        <h2 id="solutions-title">حلول تناسب مختلف الأنشطة التجارية</h2>
+        <p>نبدأ بمحاسبة أعمالك اليوم، ونتوسع نحو حلول متخصصة تلبي احتياجاتك مستقبلاً.</p>
+      </div>
+      <div class="solutions-cards">
+        <a class="solution-card solution-accounting" href="editions.html#accounting">
+          <span class="solution-icon" aria-hidden="true"><img src="assets/solution-accounting.svg" width="72" height="72" alt=""></span>
+          <span class="solution-info"><b>نسخة المحاسبة</b><small>للمشاريع الصغيرة والمتوسطة</small><em class="solution-status available">متاحة الآن</em></span>
+          <span class="solution-arrow" aria-hidden="true">←</span>
+        </a>
+        <a class="solution-card solution-pos" href="editions.html#pos">
+          <span class="solution-icon" aria-hidden="true"><img src="assets/solution-pos.svg" width="72" height="72" alt=""></span>
+          <span class="solution-info"><b>نسخة تعدد نقاط البيع</b><small>إدارة عدة نقاط بيع ضمن النظام</small><em class="solution-status developing">قيد التطوير</em></span>
+          <span class="solution-arrow" aria-hidden="true">←</span>
+        </a>
+        <a class="solution-card solution-maintenance" href="editions.html#maintenance">
+          <span class="solution-icon" aria-hidden="true"><img src="assets/solution-maintenance.svg" width="72" height="72" alt=""></span>
+          <span class="solution-info"><b>نسخة مراكز الصيانة</b><small>إدارة عمليات الصيانة وقطع الغيار</small><em class="solution-status soon">قريباً</em></span>
+          <span class="solution-arrow" aria-hidden="true">←</span>
+        </a>
+        <a class="solution-card solution-restaurants" href="editions.html#restaurants">
+          <span class="solution-icon" aria-hidden="true"><img src="assets/solution-restaurant.svg" width="72" height="72" alt=""></span>
+          <span class="solution-info"><b>نسخة المطاعم</b><small>حل متخصص للمطاعم والمقاهي</small><em class="solution-status soon">قريباً</em></span>
+          <span class="solution-arrow" aria-hidden="true">←</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" id="contact" aria-labelledby="closing-title">
+    <div class="closing-cta__content">
+      <div class="closing-copy">
+        <span class="closing-tag"><svg class="ico"><use href="#i-check"></use></svg> تواصل مباشر دون تعقيد</span>
+        <h2 id="closing-title">جاهز لتنظيم أعمالك مع <span dir="ltr">WafaPro</span>؟</h2>
+        <p>نساعدك في التعرف على النسخة المتاحة، ومزايا البرنامج، وخطوات الحصول على الترخيص المناسب لعملك.</p>
+        <div class="closing-actions">
+          <a class="closing-primary" href="contact.html?intent=request"><svg class="ico"><use href="#i-plane"></use></svg> اطلب البرنامج</a>
+          <a class="closing-secondary" href="contact.html"><svg class="ico"><use href="#i-phone"></use></svg> تواصل معنا</a>
         </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container hero-grid">
-                <div>
-                    <div class="badge">نظام إدارة ومحاسبة احترافي</div>
-                    <h1>
-                        الحل الذكي لإدارة
-                        <span class="accent">مراكز الصيانة</span>
-                    </h1>
-                    <p>
-                        وفا برو يساعدك على تنظيم العمل اليومي داخل مركز الصيانة،
-                        متابعة الأجهزة والزبائن، وإدارة الحسابات والفواتير من خلال
-                        واجهة عملية وسريعة ومصممة للاستخدام الحقيقي.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a href="download.html" class="btn btn-primary">تحميل البرنامج</a>
-                        <a href="about.html" class="btn btn-secondary">اكتشف المزيد</a>
-                    </div>
-
-                    <div class="hero-stats">
-                        <div class="stat-box">
-                            <strong>إدارة منظمة</strong>
-                            <span>للأجهزة والعملاء</span>
-                        </div>
-                        <div class="stat-box">
-                            <strong>محاسبة أوضح</strong>
-                            <span>فواتير وتقارير</span>
-                        </div>
-                        <div class="stat-box">
-                            <strong>واجهة عملية</strong>
-                            <span>سريعة وسهلة</span>
-                        </div>
-                    </div>
-
-                    <div class="notice">
-                        الموقع في مرحلة تطوير مستمرة، وسيتم إضافة المزيد من الأقسام والتحديثات قريبًا.
-                    </div>
-                                        
-                </div>
-
-                <div class="hero-card">
-                    <img src="images/hero.jpg" alt="واجهة برنامج وفا برو">
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">المميزات الرئيسية</h2>
-                <div class="section">
-                        برنامج مختص في إدارة و محاسبة مراكز الصيانة , ( موبايل - لابتوب ) , و أي مركز صيانة , نظام عملي ومنظم مصمم لتسهيل سير العمل اليومي داخل مراكز الصيانة.
-
-                </div>
-           
-                <div class="cards">
-                    <div class="card">
-                        <h3>إدارة الأجهزة</h3>
-                        <p>متابعة حالات الصيانة، بيانات الأجهزة، وحركة كل جهاز داخل المركز بشكل واضح ومنظم.</p>
-                    </div>
-                    <div class="card">
-                        <h3>المحاسبة والتقارير</h3>
-                        <p>إدارة الفواتير والدفعات والأرصدة والتقارير لمتابعة الأداء المالي بدقة.</p>
-                    </div>
-                    <div class="card">
-                        <h3>واجهة استخدام عملية</h3>
-                        <p>تصميم سريع ومريح يساعدك على إنجاز العمل اليومي بدون تعقيد.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">صور من البرنامج</h2>
-                <p class="section-subtitle">
-                    لقطات توضيحية من واجهات النظام. اضغط على أي صورة لفتحها بالحجم الكامل.
-                </p>
-
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <a href="images/screenshot1.jpg" target="_blank">
-                            <img src="images/screenshot1.jpg" alt="صورة من البرنامج 1">
-                        </a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="images/screenshot2.jpg" target="_blank">
-                            <img src="images/screenshot2.jpg" alt="صورة من البرنامج 2">
-                        </a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="images/screenshot3.jpg" target="_blank">
-                            <img src="images/screenshot3.jpg" alt="صورة من البرنامج 3">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            © 2026 WafaPro. جميع الحقوق محفوظة.
+      </div>
+      <div class="closing-support">
+        <div class="closing-support__top">
+          <div class="closing-support__symbol" aria-hidden="true">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M13 36v-7c0-11 8-19 19-19s19 8 19 19v7" stroke="#1172d0" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="8" y="31" width="12" height="18" rx="6" fill="#1788ec"/><rect x="44" y="31" width="12" height="18" rx="6" fill="#1788ec"/><path d="M51 48v3a7 7 0 0 1-7 7H34" stroke="#1172d0" stroke-width="4.5" stroke-linecap="round" fill="none"/><rect x="28" y="53" width="10" height="7" rx="3.5" fill="#ff8b13"/></svg>
+          </div>
+          <div><strong>نحن هنا للإجابة عن استفساراتك</strong><span>تواصل معنا عبر القنوات الرسمية</span></div>
         </div>
-    </footer>
-<a href="download.html" class="floating-download">
-    تحميل البرنامج
-</a>
+        <div class="closing-support__channels">
+          <a href="https://wa.me/963996554998" target="_blank" rel="noopener noreferrer" aria-label="التواصل عبر واتساب">واتساب <span aria-hidden="true">↗</span></a>
+          <a href="https://t.me/+963996554998" target="_blank" rel="noopener noreferrer" aria-label="التواصل عبر تلغرام">تلغرام <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="footer-brand"><a href="index.html"><img src="assets/wafapro-mark.png" alt="" width="38" height="28"><span dir="ltr"><b>Wafa</b>pro</span></a><small>إدارة أسهل ... لنجاح أكبر</small></div><nav aria-label="روابط أسفل الموقع"><a href="index.html">الرئيسية</a><a href="features.html">المزايا</a><a href="editions.html">الحلول</a><a href="faq.html">الأسئلة الشائعة</a><a href="contact.html">تواصل معنا</a></nav><div class="footer-end"><a href="contact.html" aria-label="طرق التواصل"><svg class="ico"><use href="#i-mail"></use></svg></a><span dir="ltr">wafapro.net</span><small>© 2026 WafaPro — جميع الحقوق محفوظة</small></div></footer>
+<dialog class="preview-dialog" id="preview-dialog"><button type="button" id="close-preview" aria-label="إغلاق العرض"><svg class="ico"><use href="#i-close"></use></svg></button><img id="preview-image" alt="معاينة شاشة من البرنامج"><p id="preview-caption"></p></dialog>
 </body>
 </html>
