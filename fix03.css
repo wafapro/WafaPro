@@ -1,0 +1,102 @@
+
+/* WafaPro V4-FIX03 — deliberate alignment fixes, no design changes elsewhere. */
+.features-grid .feature-symbol.icon-from-art{width:100%;min-width:0;min-height:47px;height:47px;display:flex;justify-content:center;align-items:center;margin:0 auto 4px;}
+.features-grid .feature-symbol.icon-from-art img{height:47px!important;width:61px!important;object-fit:contain;object-position:center;display:block;margin:0 auto;filter:drop-shadow(0 3px 2px #12416b12)}
+.features-grid .feature-card{text-align:center;align-items:center;justify-content:flex-start}
+.features-grid .feature-card h3{text-align:center;width:100%}
+.features-grid .feature-card p{text-align:center;margin-inline:auto}
+/* Keep all three currency symbols centered using the same axis. */
+.features-grid .currency-symbol{margin-inline:auto;}
+/* Do not crop the 3-D headset or hide its outline; create a taller well-balanced CTA instead. */
+@media(min-width:1101px){
+ .cta-strip{min-height:130px!important;height:auto!important;padding-block:18px!important;overflow:hidden!important;isolation:isolate;}
+ .cta-strip:before,.cta-strip:after{height:100%!important;}
+ .cta-decoration.cta-headset-original{position:absolute!important;display:block!important;width:183px!important;height:112px!important;left:12px!important;top:9px!important;object-fit:contain!important;object-position:center!important;clip-path:none!important;}
+ .cta-buttons{margin-left:clamp(160px,13vw,235px)}
+}
+@media(min-width:721px) and (max-width:1100px){
+ .cta-strip{min-height:134px!important;padding:16px 16px 16px 135px!important;overflow:hidden!important;}
+ .cta-decoration.cta-headset-original{display:block!important;position:absolute!important;top:16px!important;left:12px!important;width:115px!important;height:101px!important;object-fit:contain!important;clip-path:none!important;}
+}
+@media(max-width:720px){.features-grid .feature-symbol.icon-from-art img{height:44px!important;}
+ .cta-strip{min-height:0!important;height:auto!important;}
+}
+/* Contact page: warm blue/orange identity with real, functional direct-messaging links. */
+.contact-page{background:#fff;color:#0c2d5a;overflow:hidden}
+.contact-shell{width:min(1190px,calc(100% - 52px));margin-inline:auto}
+.contact-brand-svg{width:29px;height:29px;display:block;flex:none}
+.contact-line-icon{width:24px;height:24px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.contact-hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(110deg,#0759bf 0%,#0752ad 30%,#0a3e87 67%,#082d67 100%);color:#fff;min-height:480px}
+.contact-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 68% 30%,#2cb8ff4b 0,transparent 33%),radial-gradient(circle at 11% 83%,#3d83e871 0,transparent 35%);pointer-events:none}
+.contact-hero-decoration{position:absolute;width:420px;height:420px;border:1px solid #a4d5ff24;border-radius:50%;top:-270px;left:-120px;box-shadow:0 0 0 64px #adddff09,0 0 0 140px #adddff08}
+.contact-hero-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding:66px 0 57px;position:relative;z-index:2}
+.contact-kicker{display:inline-flex;gap:10px;align-items:center;background:#ffffff1c;border:1px solid #ffffff31;padding:9px 16px;border-radius:30px;color:#e1f5ff;font-weight:750;font-size:13px}
+.contact-live-dot{width:9px;height:9px;background:#4fe1b0;border-radius:50%;box-shadow:0 0 0 5px #4fe1b02a}
+.contact-hero-copy h1{font-size:clamp(32px,3.4vw,50px);font-weight:900;line-height:1.35;letter-spacing:-1.2px;margin:24px 0 15px}
+.contact-hero-copy h1 span{color:#ffb35b}
+.contact-hero-copy>p{color:#cfe5ff;font-size:16px;line-height:2;max-width:570px;margin:0}
+.contact-hero-actions{display:flex;align-items:center;gap:13px;margin:26px 0 20px;flex-wrap:wrap}
+.contact-primary-cta,.contact-secondary-cta{min-height:55px;padding:11px 21px;display:inline-flex;justify-content:center;align-items:center;gap:12px;border-radius:12px;font-weight:850;font-size:15px;transition:transform .2s,box-shadow .2s}
+.contact-primary-cta{background:#23c767;color:#fff;box-shadow:0 10px 26px #071f3333}
+.contact-secondary-cta{background:#ffffff19;border:1px solid #ffffff50;color:#fff}
+.contact-primary-cta:hover,.contact-secondary-cta:hover{transform:translateY(-3px)}
+.contact-primary-cta .contact-brand-svg,.contact-secondary-cta .contact-brand-svg{width:24px;height:24px}
+.contact-cta-arrow{font-size:18px;margin-right:8px}
+.contact-hero-small{font-size:12px;color:#c1dcfa;display:block}
+.contact-hero-art{min-height:350px;position:relative;direction:ltr;display:flex;align-items:center;justify-content:center}
+.contact-orbit{border-radius:50%;border:1px solid #ffffff1f;position:absolute;pointer-events:none}
+.orbit-one{width:370px;height:370px}.orbit-two{width:480px;height:480px}
+.contact-chat-visual{width:325px;height:330px;background:#fff;box-shadow:0 25px 58px #0017356b;border-radius:22px;position:relative;z-index:2;overflow:hidden;transform:rotate(-4deg);color:#123c6b}
+.chat-header{height:66px;display:flex;align-items:center;gap:12px;padding:12px 16px;direction:rtl;background:#f6faff;border-bottom:1px solid #e4ecf8}
+.chat-brand{border-radius:14px;background:linear-gradient(135deg,#ff8800,#0763ca);color:white;font-size:26px;font-weight:900;line-height:42px;width:42px;text-align:center}
+.chat-header span:nth-child(2){display:flex;flex-direction:column;gap:1px}
+.chat-header b{font-size:15px}.chat-header small{font-size:11px;color:#6788a5}.chat-header-dots{margin-right:auto;color:#7d95b0}
+.chat-body{height:214px;background:linear-gradient(135deg,#e4f4fc,#f1faff);padding:23px 15px;direction:rtl}
+.chat-bubble{max-width:84%;width:max-content;padding:9px 13px;border-radius:13px;font-size:12px;box-shadow:0 3px 5px #0b6eac0a;margin:0 0 9px}
+.chat-bubble.incoming{background:white;border-top-right-radius:4px}.chat-bubble.incoming.second{margin-right:15px}
+.chat-bubble.outgoing{background:#d1f7e2;margin-right:auto;border-top-left-radius:4px}
+.chat-dots{display:flex;gap:3px;direction:ltr;width:48px;background:#fff;padding:10px 13px;border-radius:20px}
+.chat-dots i{display:block;width:5px;height:5px;background:#6e9cc4;border-radius:50%}
+.chat-footer{direction:rtl;display:flex;justify-content:space-between;align-items:center;height:50px;font-size:12px;color:#86a0b9;padding:10px 19px}.chat-footer span:last-child{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#15bf75;color:white}
+.contact-floating-card{position:absolute;z-index:3;direction:rtl;display:flex;align-items:center;gap:11px;padding:13px 15px;background:#fff;box-shadow:0 11px 26px #001b3b40;border-radius:14px;color:#143c68;min-width:204px}
+.floating-top{right:0;top:26px;transform:rotate(4deg)}.floating-bottom{left:0;bottom:18px;transform:rotate(4deg)}
+.floating-avatar{height:39px;width:39px;border-radius:11px;background:#e3f9ed;color:#17b65c;display:grid;place-items:center}.floating-avatar .contact-brand-svg{width:23px;height:23px}
+.telegram-avatar{background:#e8f5ff;color:#229ed9}
+.contact-floating-card span:nth-child(2){display:flex;flex-direction:column;gap:3px}
+.contact-floating-card b{font-size:13px}.contact-floating-card small{font-size:10px;color:#7490aa}
+.floating-confirm{color:#14b97b;font-size:19px;margin-right:auto}
+.contact-channels{padding:77px 0 70px;background:linear-gradient(180deg,#fff,#f6faff)}
+.contact-section-title{text-align:center;margin:0 auto 35px}.contact-eyebrow{color:#eb7c10;font-size:13px;font-weight:850}
+.contact-section-title h2{font-size:clamp(26px,2.5vw,36px);margin:9px 0;font-weight:900}
+.contact-section-title p{font-size:14px;color:#66809d;margin:0;line-height:1.85}
+.contact-channels-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.contact-channel-card{position:relative;min-width:0;display:flex;flex-direction:column;align-items:flex-start;padding:30px 28px 24px;border-radius:22px;background:white;border:1px solid #deebf9;box-shadow:0 15px 32px #0b5aa60c;transition:transform .2s,box-shadow .2s}
+.contact-channel-card:hover{transform:translateY(-5px);box-shadow:0 18px 34px #0b5aa622}
+.channel-whatsapp{--channel:#18b76a;--channel-bg:#e7f9ef}.channel-telegram{--channel:#168bd0;--channel-bg:#e8f5ff}.channel-youtube{--channel:#ef2f42;--channel-bg:#fff0f2}
+.channel-icon{width:66px;height:66px;border-radius:18px;background:var(--channel-bg);color:var(--channel);display:grid;place-items:center;margin-bottom:20px}
+.channel-icon .contact-brand-svg{width:34px;height:34px}
+.channel-card-badge{position:absolute;left:25px;top:38px;background:var(--channel-bg);color:var(--channel);border-radius:50px;padding:6px 11px;font-size:11px;font-weight:800}
+.contact-channel-card h3{font-size:21px;margin:0 0 10px;font-weight:900}
+.contact-channel-card p{font-size:13px;color:#65809b;line-height:1.9;margin:0 0 14px;min-height:50px}
+.channel-handle{font-size:13px;color:#2c5883;background:#f3f8ff;padding:8px 11px;border-radius:9px;display:inline-block;margin-bottom:23px;font-weight:750;max-width:100%}
+.channel-action{background:var(--channel);border-radius:11px;color:white;display:flex;align-items:center;justify-content:space-between;padding:14px 17px;font-size:13px;font-weight:850;min-height:50px;width:100%;margin-top:auto;transition:filter .2s}
+.channel-action:hover{filter:brightness(.94)}.channel-action .contact-line-icon{width:19px;height:19px}
+.contact-details{padding:0 0 70px;background:#f6faff}
+.contact-details-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-detail-panel{display:grid;grid-template-columns:57px 1fr;gap:16px;padding:30px;border-radius:22px;border:1px solid #deecfa;background:#fff;box-shadow:0 8px 25px #0d65b009;position:relative;align-items:start}
+.detail-icon{width:55px;height:55px;display:grid;place-items:center;color:#076ccc;background:#eaf5ff;border-radius:15px}
+.contact-detail-panel h2{font-size:19px;font-weight:900;margin:0 0 10px}
+.contact-detail-panel p{font-weight:850;font-size:16px;margin:0 0 6px}
+.contact-detail-panel span:not(.detail-icon){color:#66819d;font-size:12px}
+.contact-detail-panel .detail-inline-link{grid-column:2;color:#0767cf;font-weight:850;font-size:13px;margin-top:13px}
+.contact-detail-panel .detail-phone-number{text-align:right;direction:ltr;unicode-bidi:isolate}
+.contact-final-section{background:linear-gradient(120deg,#f6faff,#fff);padding:0 0 80px}
+.contact-final-inner{background:linear-gradient(110deg,#075eaf,#0b377c);color:white;border-radius:22px;padding:35px 42px;display:flex;align-items:center;justify-content:space-between;gap:25px;position:relative;overflow:hidden}
+.contact-final-inner:after{content:"";position:absolute;left:-70px;bottom:-130px;background:#70bcff29;border-radius:50%;height:300px;width:300px}
+.contact-final-inner>div{position:relative;z-index:1}.contact-final-inner>div>span{font-size:12px;color:#acd8ff;font-weight:800}
+.contact-final-inner h2{font-size:26px;margin:6px 0 8px}.contact-final-inner p{font-size:13px;color:#d2e7ff;margin:0;line-height:1.8}
+.contact-final-button{z-index:1;display:inline-flex;align-items:center;justify-content:center;gap:10px;color:#fff;background:#1fbb68;padding:13px 22px;border-radius:11px;white-space:nowrap;font-weight:850;box-shadow:0 8px 20px #002d3344}
+.contact-final-button .contact-brand-svg{width:23px;height:23px}
+@media(max-width:1000px){.contact-hero-layout{gap:15px}.contact-floating-card{min-width:150px;max-width:165px}.contact-channel-card{padding-inline:21px}}
+@media(max-width:800px){.contact-hero-layout{grid-template-columns:1fr;padding:47px 0 28px}.contact-hero-copy{text-align:center}.contact-hero-copy>p{margin-inline:auto}.contact-hero-actions{justify-content:center}.contact-hero-art{min-height:315px;max-width:540px;width:100%;margin-inline:auto}.contact-chat-visual{height:294px;width:292px}.chat-body{height:179px}.contact-channels-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-channels-grid .channel-youtube{grid-column:1/-1}.contact-details-grid{grid-template-columns:1fr}}
+@media(max-width:570px){.contact-shell{width:calc(100% - 30px)}.contact-hero-copy h1{font-size:clamp(28px,7.5vw,37px)}.contact-hero-copy>p{font-size:13px}.contact-kicker{font-size:11px}.contact-hero-actions{gap:10px}.contact-primary-cta,.contact-secondary-cta{min-height:50px;font-size:13px;padding:9px 13px}.contact-hero-art{min-height:244px}.contact-chat-visual{width:236px;height:237px;border-radius:17px}.chat-header{height:52px;padding:8px}.chat-body{height:146px;padding:9px}.chat-bubble{font-size:9px;padding:7px}.chat-footer{height:39px}.contact-floating-card{transform:none!important;min-width:125px;max-width:145px;padding:8px;gap:7px}.floating-top{right:0;top:6px}.floating-bottom{left:0;bottom:5px}.floating-avatar{width:30px;height:30px}.contact-floating-card b{font-size:11px}.contact-floating-card small{font-size:8px}.floating-confirm{display:none}.contact-channels{padding:52px 0}.contact-channels-grid{grid-template-columns:1fr}.contact-channels-grid .channel-youtube{grid-column:auto}.contact-channel-card{padding:25px}.contact-channel-card p{min-height:auto}.contact-details{padding-bottom:45px}.contact-detail-panel{padding:24px 17px;gap:12px;grid-template-columns:48px 1fr}.detail-icon{height:44px;width:44px}.contact-detail-panel p{font-size:14px}.contact-final-section{padding-bottom:50px}.contact-final-inner{padding:26px 21px;flex-direction:column;align-items:stretch;text-align:center}.contact-final-inner h2{font-size:22px}.contact-final-button{width:100%}}

@@ -1,0 +1,37 @@
+/* FIX05 — scoped refinements to the features page. Other pages remain unchanged. */
+.wf-page .wf-feature-index {display:none!important}
+.wf-page .wf-accordion-trigger {gap:18px}
+.wf-page .wf-accordion-symbol.tone-red {color:#ed5164;background:linear-gradient(145deg,#fff0f2,#fff8f8)}
+.wf-page .wf-accordion-symbol .wf-return-svg {width:51px;height:51px;stroke-width:1;filter:drop-shadow(0 3px 5px #db546e16)}
+.wf-page .wf-accordion-symbol.tone-accounting {background:#eaf3ff;border-color:#d4e7ff;color:#1679ce}
+.wf-page .wf-accordion-symbol.tone-fiscal {background:#fff4e8;border-color:#ffe5c6;color:#ec8528}
+.wf-page .wf-accordion-symbol.tone-security {background:#eefaf5;border-color:#d2f0e0;color:#0d9c72}
+.wf-page .wf-accordion-symbol .wf-line-svg:not(.wf-return-svg) {width:38px;height:38px}
+.wf-page .wf-accordion-symbol .wf-currency-icon {width:70px;height:60px}
+.wf-page .wf-accordion-summary .wf-summary-meta {max-width:320px}
+.wf-page .wf-detail-item {min-height:0}
+.wf-page .wf-detail-item p {font-size:13px;line-height:2;color:#536e8a}
+.wf-page .wf-detail-item h3 {font-size:14.5px}
+.wf-page .wf-lead {line-height:2.05}
+.wf-page .wf-report-card p {line-height:1.95;font-size:12px}
+/* Three square preview cards, but images are fully contained and never cropped. */
+.wf-page .wf-gallery-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:16px}
+.wf-page .wf-gallery-tile {display:flex;flex-direction:column;gap:0;text-align:center;min-width:0;padding:10px;background:white;color:#174271;border:1px solid #d8e7f6;box-shadow:0 8px 24px #125da80e;border-radius:15px;cursor:zoom-in;transition:transform .2s,border-color .2s,box-shadow .2s;font-family:inherit}
+.wf-page .wf-gallery-tile:hover {transform:translateY(-3px);border-color:#89c5fc;box-shadow:0 13px 28px #0866c21a}
+.wf-page .wf-gallery-tile:focus-visible {outline:3px solid #ff9716;outline-offset:3px}
+.wf-page .wf-gallery-thumb {display:grid;place-items:center;width:100%;aspect-ratio:1/1;padding:13px;border-radius:10px;background:linear-gradient(145deg,#eaf5ff,#f7faff);border:1px solid #e1ecfa;overflow:hidden}
+.wf-page .wf-gallery-tile .wf-gallery-thumb img {display:block;width:100%;height:100%;object-fit:contain;object-position:center;aspect-ratio:auto;background:transparent;border-radius:0}
+.wf-page .wf-gallery-caption {display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 6px 7px;font-size:13px;font-weight:850;color:#0b376c}
+.wf-page .wf-gallery-caption span {color:#0075db;font-size:19px;font-weight:700}
+.wf-image-dialog {position:fixed;inset:0;box-sizing:border-box;width:min(95vw,1520px);max-width:95vw;max-height:95dvh;margin:auto;padding:13px 17px 17px;border:1px solid #cde3f6;border-radius:17px;background:white;box-shadow:0 26px 80px #03265166;color:#082f67;overflow:auto;overscroll-behavior:contain}
+.wf-image-dialog:not([open]) {display:none}
+.wf-image-dialog::backdrop {background:#04182cbb;backdrop-filter:blur(6px)}
+.wf-image-dialog-head {display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 0 13px;border-bottom:1px solid #dfeaf6;margin-bottom:12px}
+.wf-image-dialog-head strong {font-size:17px}
+.wf-image-dialog-head button {font:inherit;border:1px solid #c8dcef;padding:8px 14px;background:#f0f7ff;color:#0a579a;border-radius:9px;cursor:pointer;font-weight:800}
+.wf-image-dialog-head button:hover {background:#dcefff}
+.wf-image-dialog img {display:block;max-width:100%;height:auto;width:auto;max-height:calc(95dvh - 126px);margin:auto;object-fit:contain;box-shadow:0 4px 14px #092c5b14}
+.wf-image-dialog>p {font-size:11px;color:#6383a1;text-align:center;margin:10px 0 0}
+@media(max-width:850px){.wf-page .wf-gallery-grid {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.wf-page .wf-accordion-symbol .wf-return-svg {width:40px;height:40px}.wf-page .wf-accordion-symbol .wf-line-svg:not(.wf-return-svg) {width:30px;height:30px}.wf-page .wf-gallery-grid {grid-template-columns:1fr;max-width:410px;margin-inline:auto}.wf-page .wf-detail-item p {font-size:12px}.wf-image-dialog {max-width:98vw;width:98vw;padding:11px}.wf-image-dialog-head strong {font-size:14px}}
+@media(prefers-reduced-motion:reduce){.wf-page .wf-gallery-tile {transition:none}}
